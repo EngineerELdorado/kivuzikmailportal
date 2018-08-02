@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   myForm:FormGroup;
+  wrong:boolean;
   constructor(private router: Router) { }
 
   ngOnInit() {

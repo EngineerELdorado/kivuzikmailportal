@@ -9,7 +9,8 @@ import { Email } from '../send-mail/Email';
 })
 export class SendMailComponent implements OnInit {
 
-  myForm:FormGroup
+  myForm:FormGroup;
+  wrong:boolean;
   constructor(private userService:UsersService) { }
 
   ngOnInit() {
