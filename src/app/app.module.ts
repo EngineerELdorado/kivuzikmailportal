@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SendMailComponent } from './send-mail/send-mail.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 const appRoutes: Routes = [
   
   {path:'', component:LoginComponent},
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     BrowserModule,
     HttpClientModule,
+    NgxSpinnerModule,
     ReactiveFormsModule
   ],
   providers: [],
