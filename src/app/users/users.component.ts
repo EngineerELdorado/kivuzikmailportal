@@ -20,6 +20,7 @@ export class UsersComponent implements OnInit {
       this.spinner.hide();
       this.users=res.body;
     },(err:HttpErrorResponse)=>{
+      this.spinner.hide();
       alert(err.error)
     })
   }

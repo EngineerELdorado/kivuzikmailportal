@@ -1,13 +1,13 @@
-<div class=" row background">
+<div class=" row ">
   
   <div class="col"></div>
   <div class="col form">
-          <form class=""  [formGroup] ="myForm" novalidate (ngSubmit)="login(myForm)" autocomplete="off">
+          <form class="background" [formGroup] ="myForm" novalidate (ngSubmit)="login(myForm)" autocomplete="off">
                   <!-- <input style="opacity: 0;position: absolute;">
                   <input type="password" style="opacity: 0;position: absolute;"> -->
                   
                 <p class="h5 text-center mb-4">Kivuzik Mail Service</p>
-                <div class="container text-center">
+                <div class="container text-center" style="margin-bottom: 10px">
                   <img src="http://www.kivuzik.com/themes/vibe/images/logo.png" alt="">
                 </div>
                  <div class="form-group">
@@ -23,7 +23,7 @@
                  
               </div>
                 <div class="">
-                    <button type="submit" class="btn btn-sm btn-primary col-md-12" >Acceder</button>
+                    <button type="submit" class="btn btn-success col-md-12" >Acceder</button>
                    
                     <div *ngIf="wrong" class="text-center">  <br><label for="" class="alert alert-danger">Numero Ou Pin Incorrect</label> </div>
                   </div>
