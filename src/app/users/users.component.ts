@@ -12,6 +12,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class UsersComponent implements OnInit {
 
   users:User[];
+  canShow:boolean;
   constructor(private userService:UsersService, private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
@@ -19,6 +20,7 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe(res=>{
       this.spinner.hide();
       this.users=res.body;
+      this.canShow=true;
     },(err:HttpErrorResponse)=>{
       this.spinner.hide();
       alert(err.error)
