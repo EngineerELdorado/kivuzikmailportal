@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SendMailComponent } from './send-mail/send-mail.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 const appRoutes: Routes = [
   
   {path:'', component:LoginComponent},
@@ -30,8 +33,12 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     BrowserModule,
     HttpClientModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
     NgxSpinnerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFontAwesomeModule,
+    AngularEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

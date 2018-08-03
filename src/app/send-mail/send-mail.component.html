@@ -6,17 +6,17 @@
                   <!-- <input style="opacity: 0;position: absolute;">
                   <input type="password" style="opacity: 0;position: absolute;"> -->
                   
-                <p class="h5 text-center mb-4">Envoyer</p>
+                <p class="h5 text-center mb-4">MailService</p>
                  <div class="form-group">
                    
                   <input (keydown)="onChange()" type="text" placeholder="sujet" id="subject" class="form-control" formControlName="title">
                  
                 </div>
           
-                <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="20" class="form-control" formControlName="body"></textarea>
-              </div>
                 <div class="">
+                  <angular-editor  formControlName="body" [config]="editorConfig"></angular-editor>
+              </div>
+                <div class="hidden">
                     <button type="submit" class="btn btn-success col-md-12" >Envoyer</button>
                    
                     <div *ngIf="wrong" class="text-center">  <br><label for="" class="alert alert-danger">Numero Ou Pin Incorrect</label> </div>
