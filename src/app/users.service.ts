@@ -9,7 +9,7 @@ import { Email } from './send-mail/Email';
 export class UsersService {
 
   //URL = "http://192.168.100.2:5050";
-  URL="https://kivuzikmails.herokuapp.com";
+  URL="https://kizuzikmail.herokuapp.com";
 
   constructor(private http:HttpClient) { }
 
