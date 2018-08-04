@@ -15,6 +15,7 @@ export class UsersService {
   }
 
   sendMail(email:Email){
+    console.log(email)
     return this.http.post("https://kizuzikmail.herokuapp.com/emails/send",email, {observe:"response"})
   }
 }

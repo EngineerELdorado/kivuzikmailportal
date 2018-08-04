@@ -50,14 +50,18 @@ export class SendMailComponent implements OnInit {
   }
 
   send(form:FormGroup){
+    console.log(form.value)
     if(form.valid){
-      form.reset();
+     
+
+      
       this.userService.sendMail({
         title:form.value.title,
         body:form.value.body
       }).subscribe(res=>{
         console.log(res)
-      })
+      });
+      form.reset();
     }
     else{
       alert("Ces champs sont obligatoires")
