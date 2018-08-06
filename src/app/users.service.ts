@@ -8,8 +8,8 @@ import { Email } from './send-mail/Email';
 })
 export class UsersService {
 
-  //URL = "http://192.168.0.141:5050";
-  URL="https://kizuzikmail.herokuapp.com";
+  URL = "http://192.168.0.141:5050";
+  //URL="https://kizuzikmail.herokuapp.com";
 
   constructor(private http:HttpClient) { }
 
